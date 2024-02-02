@@ -16,4 +16,29 @@
     Nosotros.addEventListener('mouseleave', () => {
       Nav2Container.style.height = '0'; // Reduce la altura a cero al salir del hover
     });
+
+    Nav2Container.addEventListener('mouseenter', ()=>{
+      Nav2Container.style.height = 'auto';
+      const height = Nav2Container.clientHeight + 'px';
+      setTimeout(() => {
+        Nav2Container.style.height = height; // Aplica la altura medida para la animación
+      }, 0);
+
+    })
+
+    Nav2Container.addEventListener('mouseleave', ()=>{
+      Nav2Container.style.height = '0'
+    })
+
+    items.addEventListener('mouseenter', ()=>{
+      Nav2Container.style.height = 'auto';
+
+    })
+
+    items.addEventListener('mouseleave', ()=>{
+      Nav2Container.style.height = '0'
+    })
+
+
+    
   })();

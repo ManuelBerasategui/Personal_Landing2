@@ -65,7 +65,6 @@ html{
 }
 
 .nav2-oculto-container{
-    margin-top: 20px;
     background-color: #74A4D4;
     font-size: 1.5em;
     display: flex;
@@ -73,6 +72,7 @@ html{
     transition: height 0.5s ease-in-out;
     height: 0;
     overflow: hidden;
+    margin: 0;
 
 }
 
@@ -89,24 +89,15 @@ html{
 }
 
 .nav2--show{
-    animation: 1s desplazar-nav-abajo;
     opacity: 1;
     z-index: 1;
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: 0px;
     width: 100%;
     justify-content: space-evenly;
 }
 
-@keyframes desplazar-nav-abajo{
-    from{
-        transform: translateY(-50px)
-    }
-    to{
-        transform: translateY(0px)
-    }
-}
 
 /* Header body */
 
@@ -223,16 +214,22 @@ main{
     align-items: center;
     justify-content: center;
     height: 650px;
-    margin-top: -30px;
+    margin-top: auto;
 }
 
 .slider-imgs{
     position: absolute;
     width: 800px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
     border-radius: 50px;
     border: #EDF3F9 solid;
     border-width: 5px;
+    opacity: 0;
+}
+
+.slider-imgs--show{
+    transition: 1s opacity ease-in-out;
+    opacity: 1;
 }
 
 .slider-img--show{
@@ -244,18 +241,36 @@ main{
     cursor: pointer;
 }
 
+
+
+
+
 .slider-arrow-left{
     position: absolute;
+    transition: .5s left;
+    left: 10px;
+}
+
+.slider-arrow-left:hover{
+    transition: .5s left ;
     left: -10px;
 }
 .slider-arrow-right{
     position: absolute;
+    transition: .5s right;
+    right: 10px;
+}
+
+.slider-arrow-right:hover{
+    transition: .5s right ;
     right: -10px;
 }
+
 
 /* Main footer */
 
 .hover-imagenes-container{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -270,6 +285,8 @@ main{
     border: #EDF3F9 solid;
     border-width: 5px;
 }
+
+
 
 /* Footer */
 

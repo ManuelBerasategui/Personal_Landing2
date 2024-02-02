@@ -269,22 +269,84 @@ main{
 
 /* Main footer */
 
-.hover-imagenes-container{
-    
+.main-footer{
+    background-color:#0F5499;
+}
+
+.hover-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    gap: 2em;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.hover-title{
+    font-size: 3em;
+    color: #EDF3F9;
+}
+
+.galeria-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5em;
+    margin-top: 30px;
+    height: auto;
+}
+
+.imagen-galeria{
+    height: 160px;
+    margin-bottom: 150px;
+}
+
+.imagen-galeria > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: #EDF3F9 solid;
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 2);
 }
 
 .hover-imgs{
-    width: 25%;
-    border-radius: 20px;
-    border: #EDF3F9 solid;
-    border-width: 5px;
+    max-height: 150px;
 }
+
+
+.hover-galeria{
+
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    position: relative;
+    top: -155px;
+    left: 5px;
+    width: 42%;
+    height: 38%;
+    padding: 50px 80px 40px 75px;
+    
+    transform: scale(0);
+    background-color:#0f5499ae;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: #EDF3F9;
+}
+
+.imagen-galeria:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
 
 
 
@@ -402,7 +464,7 @@ main{
     width: 5%;
     position: absolute;
     left: 0;
-    top: 2300px;
+    top: 2450px;
     padding-left: 10px;
     cursor: pointer;
 }

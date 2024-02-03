@@ -42,6 +42,7 @@ html{
     text-decoration: none;
     color: #EDF3F9;
     margin-right: 10px;
+    font-size: 1.25em;
 }
 
 .nav1-items:hover{
@@ -87,8 +88,8 @@ html{
 }
 
 .nav2-items:hover{
-    transition: .3s font-size;
-    font-size: larger;
+    transition: .5s font-size;
+    font-size: ;
     margin-right: 1px;
 }
 
@@ -96,7 +97,7 @@ html{
     opacity: 1;
     z-index: 1;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0px;
     width: 100%;
     justify-content: space-evenly;

@@ -600,3 +600,116 @@ main{
     }
 
 }
+
+@media(max-width: 500px){
+    html, body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 110%;
+    }
+    .nav1-container{
+        gap: 0;
+    }
+
+    .nav1-items-container{
+        margin-left: 30px;
+        gap: .25em;
+        font-size: 1em;
+    }
+
+    .logo{
+        height: 10%;
+    }
+
+    .nav2--show{
+        margin-top: -30px;
+    }
+
+    .ingresar-btn{
+        font-weight: 400;
+        padding: 10px;
+        padding-left: 20px;
+        margin-left: 50px;
+        width: 70px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    .title{
+        margin-top: 100px;
+        font-size: 2.5em;
+    }
+
+    .subtitle-container{
+        max-width: 600px;
+    }
+
+    .subtitle{
+        font-size: 1em;
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .second-title{
+        font-size: 1.5em;
+        width: max-content;
+    }
+
+    .second-text{
+        font-size: 1em;
+    }
+
+    .imagen-importante-container{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-importante{
+        width: 85%;
+        border-radius: 35px;
+        margin: 0;
+    }
+
+    .slider-container{
+        max-height: 500px;
+        margin-top: 10px;
+    }
+
+    .slider-imgs{
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .hover-container{
+        max-width: 800px;
+    }
+
+    .galeria-imgs{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        
+    }
+
+    .return-up-button{
+        position: absolute;
+        top: 2200px;
+        left: 20px
+    }
+
+    .whatsapp-item{
+        width: 7.5%;
+        padding: 5px;
+        position: fixed;
+        
+        
+    }
+}
